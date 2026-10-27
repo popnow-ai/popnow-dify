@@ -23,7 +23,7 @@
       "help": {
         "en_US": "Use a dedicated restricted API key. API USD funds are separate from website credits."
       },
-      "url": "https://popnow.ai/api/keys"
+      "url": "https://popnow.ai/api/console/keys"
     }
   },
   "tools": [

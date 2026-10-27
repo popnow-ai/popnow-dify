@@ -4,8 +4,8 @@ Create images, videos, music and voiceovers through the [PopNow API](https://pop
 
 ## Setup
 
-1. Create a PopNow account and a dedicated API key in the [API console](https://popnow.ai/api/keys). Restrict the key's models, allowed IPs and daily/monthly/lifetime budget as needed.
-2. Add funds to the **API USD balance** in [API billing](https://popnow.ai/api/billing). It starts at $0. Website credits and API USD are separate; website credits cannot pay for these tools. No subscription is required.
+1. Create a PopNow account and a dedicated API key in the [API console](https://popnow.ai/api/console/keys). Restrict the key's models, allowed IPs and daily/monthly/lifetime budget as needed.
+2. Add funds to the **API USD balance** in [API billing](https://popnow.ai/api/console/billing). It starts at $0. Website credits and API USD are separate; website credits cannot pay for these tools. No subscription is required.
 3. Install this plugin in Dify and enter the key in its secret credential field. Credential validation makes one read-only balance request.
 4. Allow outbound HTTPS to `api.popnow.ai:443`. No arbitrary API host can be configured. References supplied in model inputs are sent to PopNow, which may retrieve them to fulfill the request.
 
