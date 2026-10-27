@@ -1,0 +1,38 @@
+{
+  "version": "0.1.0",
+  "type": "plugin",
+  "author": "popnow",
+  "name": "popnow",
+  "label": {
+    "en_US": "PopNow"
+  },
+  "description": {
+    "en_US": "Create images, videos, music and voiceovers with explicit API USD quotes."
+  },
+  "icon": "icon.png",
+  "resource": {
+    "memory": 268435456,
+    "permission": {}
+  },
+  "plugins": {
+    "tools": [
+      "provider/popnow.yaml"
+    ]
+  },
+  "meta": {
+    "version": "0.0.1",
+    "arch": [
+      "amd64",
+      "arm64"
+    ],
+    "runner": {
+      "language": "python",
+      "version": "3.12",
+      "entrypoint": "main"
+    },
+    "minimum_dify_version": null
+  },
+  "created_at": "2026-10-27T00:00:00Z",
+  "privacy": "PRIVACY.md",
+  "verified": false
+}

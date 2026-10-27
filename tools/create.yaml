@@ -1,0 +1,87 @@
+{
+  "identity": {
+    "name": "create",
+    "author": "popnow",
+    "label": {
+      "en_US": "Create approved task"
+    }
+  },
+  "description": {
+    "human": {
+      "en_US": "Spend API USD to create ONE task, only after explicit approval of the quote. Never infer approval. Requires exact quote ID, approved max USD string and a stable idempotency key. Retry only with the SAME key and same parameters; changed inputs need a new quote and approval."
+    },
+    "llm": "Spend API USD to create ONE task, only after explicit approval of the quote. Never infer approval. Requires exact quote ID, approved max USD string and a stable idempotency key. Retry only with the SAME key and same parameters; changed inputs need a new quote and approval."
+  },
+  "parameters": [
+    {
+      "name": "model",
+      "type": "string",
+      "required": true,
+      "label": {
+        "en_US": "Model"
+      },
+      "human_description": {
+        "en_US": "Same exact model path used in the approved quote."
+      },
+      "llm_description": "Same exact model path used in the approved quote.",
+      "form": "llm"
+    },
+    {
+      "name": "input_json",
+      "type": "string",
+      "required": true,
+      "label": {
+        "en_US": "Input Json"
+      },
+      "human_description": {
+        "en_US": "Same exact input JSON object used in the approved quote."
+      },
+      "llm_description": "Same exact input JSON object used in the approved quote.",
+      "form": "llm"
+    },
+    {
+      "name": "quote_id",
+      "type": "string",
+      "required": true,
+      "label": {
+        "en_US": "Quote Id"
+      },
+      "human_description": {
+        "en_US": "quoteId returned by Quote generation."
+      },
+      "llm_description": "quoteId returned by Quote generation.",
+      "form": "llm"
+    },
+    {
+      "name": "approved_max_usd",
+      "type": "string",
+      "required": true,
+      "label": {
+        "en_US": "Approved Max Usd"
+      },
+      "human_description": {
+        "en_US": "User-approved maxChargeUsd copied as a decimal STRING with up to nine decimal places. Do not use website credits or binary floats."
+      },
+      "llm_description": "User-approved maxChargeUsd copied as a decimal STRING with up to nine decimal places. Do not use website credits or binary floats.",
+      "form": "llm"
+    },
+    {
+      "name": "idempotency_key",
+      "type": "string",
+      "required": true,
+      "label": {
+        "en_US": "Idempotency Key"
+      },
+      "human_description": {
+        "en_US": "Unique stable key (1–100 visible ASCII characters) for this approved task. Keep it unchanged if the response is lost."
+      },
+      "llm_description": "Unique stable key (1–100 visible ASCII characters) for this approved task. Keep it unchanged if the response is lost.",
+      "form": "llm"
+    }
+  ],
+  "extra": {
+    "python": {
+      "source": "tools/create.py"
+    }
+  }
+}

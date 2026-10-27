@@ -1,0 +1,48 @@
+{
+  "identity": {
+    "name": "models",
+    "author": "popnow",
+    "label": {
+      "en_US": "Find models"
+    }
+  },
+  "description": {
+    "human": {
+      "en_US": "Discover models and their input schemas before preparing a generation request."
+    },
+    "llm": "Discover models and their input schemas before preparing a generation request."
+  },
+  "parameters": [
+    {
+      "name": "search",
+      "type": "string",
+      "required": false,
+      "label": {
+        "en_US": "Search"
+      },
+      "human_description": {
+        "en_US": "Optional model name or keyword."
+      },
+      "llm_description": "Optional model name or keyword.",
+      "form": "llm"
+    },
+    {
+      "name": "modality",
+      "type": "string",
+      "required": false,
+      "label": {
+        "en_US": "Modality"
+      },
+      "human_description": {
+        "en_US": "Optional modality filter, such as image, video or audio."
+      },
+      "llm_description": "Optional modality filter, such as image, video or audio.",
+      "form": "llm"
+    }
+  ],
+  "extra": {
+    "python": {
+      "source": "tools/models.py"
+    }
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "identity": {
+    "name": "status",
+    "author": "popnow",
+    "label": {
+      "en_US": "Task status"
+    }
+  },
+  "description": {
+    "human": {
+      "en_US": "Read an existing task state and output URLs. Does not download output files or create another task."
+    },
+    "llm": "Read an existing task state and output URLs. Does not download output files or create another task."
+  },
+  "parameters": [
+    {
+      "name": "task_id",
+      "type": "string",
+      "required": true,
+      "label": {
+        "en_US": "Task Id"
+      },
+      "human_description": {
+        "en_US": "Task ID returned by Create approved task."
+      },
+      "llm_description": "Task ID returned by Create approved task.",
+      "form": "llm"
+    }
+  ],
+  "extra": {
+    "python": {
+      "source": "tools/status.py"
+    }
+  }
+}

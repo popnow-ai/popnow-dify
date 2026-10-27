@@ -1,0 +1,41 @@
+{
+  "identity": {
+    "author": "popnow",
+    "name": "popnow",
+    "label": {
+      "en_US": "PopNow"
+    },
+    "description": {
+      "en_US": "Create images, videos, music and voiceovers with explicit API USD quotes."
+    },
+    "icon": "icon.png"
+  },
+  "credentials_for_provider": {
+    "api_key": {
+      "type": "secret-input",
+      "required": true,
+      "label": {
+        "en_US": "PopNow API key"
+      },
+      "placeholder": {
+        "en_US": "sk-popnow-…"
+      },
+      "help": {
+        "en_US": "Use a dedicated restricted API key. API USD funds are separate from website credits."
+      },
+      "url": "https://popnow.ai/api/keys"
+    }
+  },
+  "tools": [
+    "tools/models.yaml",
+    "tools/balance.yaml",
+    "tools/quote.yaml",
+    "tools/create.yaml",
+    "tools/status.yaml"
+  ],
+  "extra": {
+    "python": {
+      "source": "provider/popnow.py"
+    }
+  }
+}

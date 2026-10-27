@@ -1,0 +1,21 @@
+{
+  "identity": {
+    "name": "balance",
+    "author": "popnow",
+    "label": {
+      "en_US": "API USD balance"
+    }
+  },
+  "description": {
+    "human": {
+      "en_US": "Read the API USD balance. Website credits are separate and cannot fund API tasks."
+    },
+    "llm": "Read the API USD balance. Website credits are separate and cannot fund API tasks."
+  },
+  "parameters": [],
+  "extra": {
+    "python": {
+      "source": "tools/balance.py"
+    }
+  }
+}

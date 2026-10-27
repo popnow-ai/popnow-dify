@@ -1,0 +1,48 @@
+{
+  "identity": {
+    "name": "quote",
+    "author": "popnow",
+    "label": {
+      "en_US": "Quote generation"
+    }
+  },
+  "description": {
+    "human": {
+      "en_US": "Get an exact USD quote for a model and input. Does not create a task or spend funds."
+    },
+    "llm": "Get an exact USD quote for a model and input. Does not create a task or spend funds."
+  },
+  "parameters": [
+    {
+      "name": "model",
+      "type": "string",
+      "required": true,
+      "label": {
+        "en_US": "Model"
+      },
+      "human_description": {
+        "en_US": "Exact model path from Find models, including provider and task."
+      },
+      "llm_description": "Exact model path from Find models, including provider and task.",
+      "form": "llm"
+    },
+    {
+      "name": "input_json",
+      "type": "string",
+      "required": true,
+      "label": {
+        "en_US": "Input Json"
+      },
+      "human_description": {
+        "en_US": "JSON object matching that model input schema. Keep identical when creating the approved task."
+      },
+      "llm_description": "JSON object matching that model input schema. Keep identical when creating the approved task.",
+      "form": "llm"
+    }
+  ],
+  "extra": {
+    "python": {
+      "source": "tools/quote.py"
+    }
+  }
+}
