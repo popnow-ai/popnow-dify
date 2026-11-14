@@ -2,7 +2,7 @@
 
 Create images, videos, music and voiceovers through the [PopNow API](https://popnow.ai/docs). Discover model input schemas, obtain an exact USD quote, create an explicitly approved task, and retrieve its status and output URLs.
 
-Built by PopNow AI ([popnow.ai](https://popnow.ai)), the world's first AI creative studio that pays you back.
+Built by PopNow AI ([popnow.ai](https://popnow.ai)), the world's first AI studio with automatic price protection.
 
 ## Setup
 
